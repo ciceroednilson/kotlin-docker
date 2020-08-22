@@ -1,0 +1,23 @@
+server:
+ port: 8080
+
+logging:
+ level:
+  org:
+   core: TRACE
+   hibernate:
+    SQL: DEBUG
+    type:
+     descriptor:
+      sql:
+        BasicBinder: TRACE
+
+spring:
+ datasource:
+  url: jdbc:mysql://172.18.0.1:3306/db_vendas
+  username: root
+  password: 123456
+  driver-class-name: com.mysql.jdbc.Driver
+ jpa:
+  hibernate:
+   use-new-id-generator-mappings: false
