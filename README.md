@@ -25,8 +25,8 @@ docker build -f Dockerfile -t img-api-cliente .
 docker run -d -v /apis/config:/apis/config -p 9000:8080 img-api-cliente:latest --hostname api-cliente --name api-cliente --network=ciceroednilson  
 
 ### Iniciando os Container
-sudo docker container start <container id mysql>
-sudo docker container start <container id api>
+* sudo docker container start id_container_mysql
+* sudo docker container start id_container_api
 
 
 # Testando a api.
